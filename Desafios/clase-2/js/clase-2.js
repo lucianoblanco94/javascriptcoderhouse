@@ -16,17 +16,20 @@ let promedio = (parseFloat(examen1) + parseFloat(examen2) + parseFloat(examen3))
 let asistencia = (parseFloat(prompt("Ingrese clases asistidas del alumno:"))/18) * 100;
 
 
-if((promedio >=9) && (asistencia >= 75)){
+if((promedio > 9) && (asistencia >= 75)){
     alert("El alumno " + alumno + " tiene una calificación de Sobresaliente, con un promedio de " + promedio  + " y una asistencia de " + asistencia + "%");
 }
-else if((promedio >= 6) && (asistencia >= 75)){
-    alert("El alumno " + alumno + " tiene una calificación de Regular, con un promedio de " + promedio + " y una asistencia de " + asistencia + "%");
+else if((promedio > 8) && (promedio <= 9) && (asistencia >= 75)){
+    alert("El alumno " + alumno + " tiene una calificación de Muy Bueno, con un promedio de " + promedio + " y una asistencia de " + asistencia + "%");
+}
+else if((promedio >= 6) && (promedio <= 8) && (asistencia >= 75)){
+    alert("El alumno " + alumno + " tiene una calificación de Bueno, con un promedio de " + promedio + " y una asistencia de " + asistencia + "%");
 }
 else if ((promedio >= 6) && (asistencia < 75)){
     alert("El alumno " + alumno + " tiene que rendir, por una asistencia a clases de: " + asistencia + "%. No cumple con el requisito de asistencias.");
     alert("Para aprobar el curso las asistencias deben tener más del 75%");
 }
-else if ((promedio <6) && (promedio >=4)){
+else if ((promedio < 6) && (promedio >= 4)){
     alert("El alumno " + alumno + " tiene que recuperar, por un promedio de: " + promedio + ". No cumple con el requisito del promedio.");
 }
 else{

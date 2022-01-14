@@ -1,6 +1,8 @@
 /* 
 Programa que pide nombre del producto y calcula el costo total de la compra según cantidad.
 Calcula también la ganancia obtenida por ventas
+
+No vimos aún como agregar varios valores a una variable y almacenar toda la informacion
 */
 
 

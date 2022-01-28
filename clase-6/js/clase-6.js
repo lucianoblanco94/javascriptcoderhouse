@@ -115,7 +115,7 @@ console.log(listaNombres);
  */
 
 /* // Funcion para elminar un elemento mediante selección de su index
-function elminarElemento(miArray, valor) {
+function eliminarElemento(miArray, valor) {
     let nuevoArray = [];
     for(let i=0; i<miArray.length; i++){
         if(i != valor){
@@ -126,7 +126,7 @@ function elminarElemento(miArray, valor) {
 }
 
 miArray = ["Lucho", "Mica", "Sofi", "Juli"];
-nuevoArray = elminarElemento(miArray, 1);
+nuevoArray = eliminarElemento(miArray, 1);
 console.log(miArray);
 console.log(nuevoArray);
  */

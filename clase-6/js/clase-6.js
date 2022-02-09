@@ -236,7 +236,7 @@ console.log(encontrado4);
 console.log(lista_nombres) */
 
 //Ejemplo aplicado: buscando y filtrando objetos
-
+/* 
 const productos = [{id:1, producto:"Arroz", precio:125}, {id:2, producto:"Leche", precio: 100}, {id:3, producto:"Pan", precio: 200}];
 
 const buscarPan = productos.find(productos => productos.id === 3);
@@ -248,13 +248,71 @@ console.log(baratos);
 const aumentos = productos.map(productos => productos.precio += 30);
 console.log(aumentos);
 
+ */
+// Afterclass clase 6
+
+// Creamos una clase para objetos
+class Producto {
+    constructor(id, nombre, precio) {
+        this.id = id;
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+    }
+}
+
+// Creamos una iteracion for con una pregunta acerca de la cantidad de productos que deseamos agregar
+
+let cant = parseInt(prompt("Ingrese la cantidad de productos a agregar"));
+// Creamos un array
+const arrayProductos = [];
+
+for (let i=0; i < cant; i++) {
+    let id = i + 1;
+    let nombre = prompt("Ingrese nombre del producto");
+    let precio = parseInt(prompt("Ingrese precio del producto"));
+    let producto = new Producto(id, nombre, precio);
+    arrayProductos.push(producto);
+
+}
+
+// Mostrmaos la cantidad de elementos dentro del array
+console.log("Cantidad de productos en lista: " + arrayProductos.length);
+
+// Mostramos la información de cada elemento dentro del array
+for (let producto of arrayProductos) {
+    console.log("1- ID: " + producto.id + ", Nombre: " + producto.nombre + " Precio: $" + producto.precio);
+}
+/* // Mismo resultado, diferente planteo
+for (i=0; i< arrayProductos.length; i++) {
+    console.log("2- ID: " + arrayProductos[i].id + ", Nombre: " + arrayProductos[i].nombre + " Precio: $" + arrayProductos[i].precio);
+}
+
+// Otro planteo
+i = 0;
+while (i<arrayProductos) {
+    console.log("3- ID: " + arrayProductos[i].id + ", Nombre: " + arrayProductos[i].nombre + " Precio: $" + arrayProductos[i].precio);
+}
+ */
+
+let linea = "--------------";
+console.log(linea);
 
 
-
-
-
-
-
+// Ingresamos nombre del producto a buscar
+let producto_busqueda = prompt("Ingrese producto a buscar").toUpperCase();
+// Filtramos el nombre del producto buscado
+let producto_encontrado = [];
+// Recorremos el array de objetos
+for (let producto of arrayProductos) {
+    let nombre_producto = producto.nombre;
+    if (nombre_producto.includes(producto_busqueda)){
+        producto_encontrado.push(producto);
+    }
+}
+// Mostramos el producto buscado
+for (let produ of producto_encontrado) {
+    console.log("Producto encotrado: " + produ.nombre + ". El cual tiene un precio de: $" +  produ.precio);
+}
 
 
 

@@ -1,0 +1,25 @@
+[
+    {"id":332, "nombre":"Poste 3x3x200", "precio":1475, "ancho":3, "espesor":3, "largo":2, "pies":4.9212},
+    {"id":3322, "nombre":"Poste 3x3x220", "precio":1620, "ancho":3, "espesor":3, "largo":2.2, "pies":5.41332},
+    {"id":3324, "nombre":"Poste 3x3x240", "precio":1770, "ancho":3, "espesor":3, "largo":2.4, "pies":5.90544},
+    {"id":3327, "nombre":"Poste 3x3x270", "precio":2000, "ancho":3, "espesor":3, "largo":2.7, "pies":6.64362},
+    {"id":333, "nombre":"Poste 3x3x300", "precio":2200, "ancho":3, "espesor":3, "largo":3, "pies":7.3818},
+    {"id":442, "nombre":"Poste 4x4x200", "precio":2625, "ancho":4, "espesor":4, "largo":2, "pies":8.7488},
+    {"id":4422, "nombre":"Poste 4x4x220", "precio":2890, "ancho":4, "espesor":4, "largo":2.2, "pies":9.62368},
+    {"id":4424, "nombre":"Poste 4x4x240", "precio":3150, "ancho":4, "espesor":4, "largo":2.4, "pies":10.49856},
+    {"id":4427, "nombre":"Poste 4x4x270", "precio":3550, "ancho":4, "espesor":4, "largo":2.7, "pies":11.81088},
+    {"id":443, "nombre":"Poste 4x4x300", "precio":3900, "ancho":4, "espesor":4, "largo":3, "pies":13.1232},
+    {"id":552, "nombre":"Poste 5x5x200", "precio":4100, "ancho":5, "espesor":5, "largo":2, "pies":13.67},
+    {"id":5525, "nombre":"Poste 5x5x250", "precio":5130, "ancho":5, "espesor":5, "largo":2.5, "pies":17.0875},
+    {"id":5527, "nombre":"Poste 5x5x270", "precio":5540, "ancho":5, "espesor":5, "largo":2.7, "pies":18.4545},
+    {"id":553, "nombre":"Poste 5x5x300", "precio":6200, "ancho":5, "espesor":5, "largo":3, "pies":20.505},
+    {"id":5532, "nombre":"Poste 5x5x320", "precio":6450, "ancho":5, "espesor":5, "largo":3.2, "pies":21.875},
+    {"id":5535, "nombre":"Poste 5x5x350", "precio":6800, "ancho":5, "espesor":5, "largo":3.5, "pies":23.9225},
+    {"id":662, "nombre":"Poste 6x6x200", "precio":6000, "ancho":6, "espesor":6, "largo":2, "pies":19.08},
+    {"id":6625, "nombre":"Poste 6x6x250", "precio":7400, "ancho":6, "espesor":6, "largo":2.5, "pies":24.606},
+    {"id":6627, "nombre":"Poste 6x6x270", "precio":8000, "ancho":6, "espesor":6, "largo":2.7, "pies":26.57448},
+    {"id":663, "nombre":"Poste 6x6x300", "precio":8900, "ancho":6, "espesor":6, "largo":3, "pies":29.5272},
+    {"id":6632, "nombre":"Poste 6x6x320", "precio":9500, "ancho":6, "espesor":6, "largo":3.2, "pies":31.49568},
+    {"id":6635, "nombre":"Poste 6x6x350", "precio":10500, "ancho":6, "espesor":6, "largo":3.5, "pies":34.4484}
+
+]

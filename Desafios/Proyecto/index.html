@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final | Javascript | Luciano Blanco</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorías
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Postes</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Tablas</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Durmientes</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body class="mb-5">
+
+  <div class="container">
+    <div class="row" id="divCalculadora">
+      <p class="h2 col-12 text-center">Calculadora de Liquidacion</p>
+      <div class="col-6 text-center">
+        <label for="codigo-producto" class="col-12 ">Código producto</label>
+        <input type="text" name="codigo-producto" class="w-25 mt-1" id="codigo-producto">
+        <label for="cantidad-producto" class="col-12">Cantidad</label>
+        <input type="text" name="cantidad-producto" class="w-25 mt-1" id="cantidadIngresada">
+        <div id="resultado" class="mt-3 col-12"></div>
+        <form action=""></form>
+      </div>
+
+      <div class="container-btn col-3 mt-3">
+        <div class="col-md-4">
+          <button id="btn-agregar" class="btn btn-success btn-md m-1" type="button">Agregar</button>
+        </div>
+        <div class="col-md-4">
+          <input id="btn-enviar" class="btn btn-primary btn-md m-1" type="submit" value="Calcular">
+        </div>
+        <div class="col-md-4">
+          <button id="btn-limpiar" class="btn btn-dark btn-md m-1" type="reset" value="Borrar">Borrar</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <p class="bg-warning d-none" id="errorCodigo">Ingrese un código válido.</p>
+      <p class="bg-warning d-none" id="errorCantidad">Ingrese cantidad.</p>
+    </div>
+  </div>
+  <div class="container my-5" id="products-line">
+    <table class="container" id="prodcuts-table">
+      <tr class="row text-center">
+        <th class=" col-2">ID</th>
+        <th class=" col-2">Cantidad</th>
+        <th class=" col-2">Nombre</th>
+        <th class=" col-2">Pies</th>
+        <th class=" col-2">Total</th>
+      </tr>
+    </table>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/proyecto.js"></script>
+</body>
+
+</html>

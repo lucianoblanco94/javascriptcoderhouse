@@ -1,0 +1,3 @@
+Boton Agregar => la funcionalidad de este botón es que cada vez que se ingresa un código y una cantidad
+nos muestre la información del ID solicitado con la cantidad ingresada y el calculo de pies * cantidad del producto.
+Al ingresar el ID, el producto debe buscar en un array de objetos el ID solicitado con su información.

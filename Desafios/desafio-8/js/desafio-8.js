@@ -28,6 +28,15 @@ const productos = [];
 const poste332 = new Producto(332, "Poste", 2 , 3, 3, "Quebracho Colorado", 100, 1380, 790);
 const poste3322 = new Producto(3322, "Poste", 2.2, 3, 3, "Quebracho Colorado", 100, 1500, 865);
 const poste3324 = new Producto(3324, "Poste", 2.4, 3, 3, "Quebracho Colorado", 100, 1650, 945);
+const poste3327 = new Producto(3327, "Poste", 2.7, 3, 3, "Quebracho Colorado", 100, 1850, 1060);
+const poste333 = new Producto(333, "Poste", 3, 3, 3, "Quebracho Colorado", 100, 2070, 1180);
+const poste442 = new Producto(442, "Poste", 2, 4, 4, "Quebracho Colorado", 100, 2450, 1400);
+const poste4422 = new Producto(4422, "Poste", 2.2, 4, 4, "Quebracho Colorado", 100, 2700, 1540);
+const poste4424 = new Producto(4424, "Poste", 2.4, 4, 4, "Quebracho Colorado", 100, 2940, 1680);
+const poste4427 = new Producto(4427, "Poste", 2.7, 4, 4, "Quebracho Colorado", 100, 3310, 1890);
+const poste443 = new Producto(443, "Poste", 3, 4, 4, "Quebracho Colorado", 100, 3680, 2100);
+
+
 
 // Usamos una iteracion para agregar más productos a nuestro array
 /* let cant = parseInt(prompt("Ingrese la cantidad de productos a agregar"));
@@ -48,7 +57,7 @@ for (let i=0; i < cant; i++) {
 } */
 
 // Agregamos productos al array
-productos.push(poste332, poste3322, poste3324);
+productos.push(poste332, poste3322, poste3324, poste3327, poste333, poste442, poste4422, poste4424, poste4427, poste443);
 
 
 let menuNavegable = document.createElement("header");
@@ -62,29 +71,25 @@ menuNavegable.innerHTML = `<nav class="navbar navbar-expand-lg navbar-light bg-l
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown
+          Categorías
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Postes</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item" href="#">Tablas</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Durmientes</a></li>
         </ul>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
+
     </ul>
     <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
     </form>
   </div>
 </div>
@@ -95,10 +100,10 @@ document.body.prepend(menuNavegable);
 
 
 //Recorremos e imprimimos los productos
-/* for (const producto of productos) {
+ for (const producto of productos) {
     console.log("El producto " + producto.nombre + " " + producto.ancho + "x" + producto.espesor + "x" + producto.largo + " tiene un precio de $" + producto.precio);
-} */
-
+} 
+ 
 let filaTabla = document.getElementById("divTabla");
 
 let divTabla = document.createElement("div");
@@ -149,6 +154,21 @@ for (const producto of productos) {
     tablaProductos.appendChild(siguienteFila);     
 }
 
+function guardarProducto(productos){
+    localStorage.setItem("productos", JSON.stringify(productos));
+    console.log("Los productos se guardaron correctamente");
+}
+
+function cargarProductos(){
+  console.log("Se cargaron correctamente los productos");
+  return JSON.parse(localStorage.getItem("productos"));
+}
+function borrarProductos() {
+  localStorage.clear();
+}
+// guardarProducto();
+//  cargarProductos();
+// borrarProductos();
 
 
 
